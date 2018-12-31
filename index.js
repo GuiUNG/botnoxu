@@ -30,7 +30,6 @@ client.on("message", message => {
                 return console.log('Não encontrei este comando');
   }
   
-http = require 'http'
 handle = (req, res) -> res.end "hit"
 
 server = http.createServer handle
