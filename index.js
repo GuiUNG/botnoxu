@@ -1,8 +1,8 @@
+require('http').createServer().listen(3000);
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 const fs = require('fs');
-require('http').createServer().listen(3000);
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
