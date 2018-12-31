@@ -29,7 +29,7 @@ client.on("message", message => {
     console.error(err)
                 return console.log('Não encontrei este comando');
   }
-
+ 
 });
  
-client.login(config.token)
+client.login(process.env.TOKEN);
