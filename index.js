@@ -29,12 +29,7 @@ client.on("message", message => {
     console.error(err)
                 return console.log('Não encontrei este comando');
   }
-  
-server = http.createServer handle
 
-server.listen process.env.PORT || 5000
-  }
- 
 });
  
 client.login(config.token)
