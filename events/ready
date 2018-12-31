@@ -1,0 +1,5 @@
+exports.run = (client) => {
+  const config = require('./config.json');
+  client.user.setPresence({ game: { name: 'Rede Noxus', type: 1, url: 'https://www.twitch.tv/thebigfamilydc'} });
+  console.log(`Em funcionamento!!!! total de ${client.channels.size} Canais, em ${client.guilds.size} servers, um total de ${client.users.size} usuarios.`);
+}

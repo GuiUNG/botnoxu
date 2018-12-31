@@ -1,0 +1,22 @@
+{
+  "name": "RedeNoxus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+	"start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bot": "0.0.3",
+    "client": "0.0.1",
+    "discord.js": "^11.4.2",
+    "fs": "0.0.1-security",
+    "missing": "0.0.1",
+    "module": "^1.2.5",
+    "set": "^1.1.1"
+  }
+}
