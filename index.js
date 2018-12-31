@@ -30,8 +30,6 @@ client.on("message", message => {
                 return console.log('Não encontrei este comando');
   }
   
-handle = (req, res) -> res.end "hit"
-
 server = http.createServer handle
 
 server.listen process.env.PORT || 5000
