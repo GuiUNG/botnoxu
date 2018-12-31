@@ -29,10 +29,6 @@ client.on("message", message => {
     console.error(err)
                 return console.log('Não encontrei este comando');
   }
-fastify.listen(process.env.PORT || 3000, function (err) {
-  if (err) throw err
-  console.log(`server listening on ${fastify.server.address().port}`)
-}
  
 });
 client.login(config.token);
