@@ -35,5 +35,4 @@ fastify.listen(process.env.PORT || 3000, function (err) {
 }
  
 });
-listen(process.env.PORT) 
 client.login(config.token);
