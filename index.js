@@ -4,13 +4,6 @@ const config = require('./config.json');
 const http = require('http');
 const fs = require('fs');
 
-handle = (req, res) -> res.end "hit"
-
-server = http.createServer handle
-
-server.listen process.env.PORT || 5000
-
-
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
@@ -35,6 +28,14 @@ client.on("message", message => {
   } catch (err) {
     console.error(err)
                 return console.log('Não encontrei este comando');
+  }
+  
+http = require 'http'
+handle = (req, res) -> res.end "hit"
+
+server = http.createServer handle
+
+server.listen process.env.PORT || 5000
   }
  
 });
